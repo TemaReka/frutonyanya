@@ -1,0 +1,156 @@
+:root {
+    --bg-color: #FFF9F2;
+    --link-color: #1F75FE;
+    --accent-color: #FFA343;
+    --accent-border-radius: 10px;
+    --default-border-radius: 6px;
+    --heart-color: #E5432D;
+}
+
+@font-face {
+    font-family: 'Runde';
+    src: url('./fonts/OpenRunde-Regular.woff2') format('woff2');
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: 'Runde';
+    src: url('./fonts/OpenRunde-Bold.woff2') format('woff2');
+    font-weight: 700;
+}  
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+          
+          
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: var(--bg-color);
+    font-size: 20px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 25px 57px 0 40px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1%;
+    text-underline-offset: 12%;
+    text-decoration-skip: none;
+    text-decoration-color: color-mix(in srgb, currentColor, transparent 80%);
+    text-decoration-skip-ink: none;
+}
+
+a span {
+    text-decoration: none;
+    display: inline-block; 
+}
+
+button {
+    padding: 15px 24px;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    border-radius: var( --default-border-radius);
+    align-self: flex-start;
+}
+
+h1 {
+    font-family: 'Runde', sans-serif;
+    font-size: 96px;
+    line-height: 85px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.leading {
+    font-family: 'Runde', sans-serif;
+    font-size: 32px;
+    line-height: 39px;
+    color: #fff;
+}
+
+
+.logo {
+    margin-right: 30px;
+}
+
+.icons {
+    display: flex;
+    gap: 14px;
+}
+
+.icons img {
+    height: 24px;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row nowrap;
+    gap: 14px;
+    align-items: center;
+    padding-left: 0;
+}
+
+li span {
+    color: var(--heart-color);
+}
+
+.logo {
+    height: 30px;
+}
+
+header, footer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.hero {
+    padding-left: 40px;
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    border-radius: var(--accent-border-radius);
+    background-color: var(--accent-color);
+    margin-bottom: 40px;
+}
+
+.hero div {
+    width: 100%;
+}
+
+.hero-dscr {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+footer p {
+ margin-bottom: 0;
+ margin-right: 30px;
+ line-height: 22px;
+}
+
+.hearts {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
