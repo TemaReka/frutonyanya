@@ -1,10 +1,6 @@
 :root {
-    --bg-color: #FFF9F2;
     --link-color: #1F75FE;
-    --accent-color: #FFA343;
-    --accent-border-radius: 10px;
-    --default-border-radius: 6px;
-    --heart-color: #E5432D;
+    --main-margin: 40px;
 }
 
 @font-face {
@@ -30,7 +26,7 @@
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    background-color: var(--bg-color);
+    background-color: #FFF9F2;
     font-size: 20px;
 }
 
@@ -50,7 +46,7 @@ a {
     text-decoration-skip-ink: none;
 }
 
-a span {
+.no-underline {
     text-decoration: none;
     display: inline-block; 
 }
@@ -60,30 +56,28 @@ button {
     color: #fff;
     background-color: var(--link-color);
     border: none;
-    border-radius: var( --default-border-radius);
+    border-radius: 6px;
     align-self: flex-start;
 }
 
-h1 {
+h1, .leading {
     font-family: 'Runde', sans-serif;
+    color: #fff;
+}
+
+h1 {
     font-size: 96px;
     line-height: 85px;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 .leading {
-    font-family: 'Runde', sans-serif;
     font-size: 32px;
     line-height: 39px;
-    color: #fff;
 }
 
 
 
-.logo {
-    margin-right: 30px;
-}
 
 .icons {
     display: flex;
@@ -99,7 +93,7 @@ nav {
     flex-grow: 1;
 }
 
-nav ul {
+.menu, .social {
     display: flex;
     list-style: none;
     flex-flow: row nowrap;
@@ -108,12 +102,13 @@ nav ul {
     padding-left: 0;
 }
 
-li span {
-    color: var(--heart-color);
+.heart-symbol {
+    color: #E5432D;
 }
 
 .logo {
     height: 30px;
+    margin-right: 30px;
 }
 
 header, footer {
@@ -128,17 +123,18 @@ header, footer {
     padding-top: 30px;
     display: flex;
     gap: 20px;
-    border-radius: var(--accent-border-radius);
-    background-color: var(--accent-color);
-    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #FFA343;
+    margin-bottom: var(--main-margin);
 }
 
-.hero div {
+
+.hero-img, .hero-txt {
     width: 100%;
 }
 
-.hero-dscr {
-    margin-bottom: 40px;
+.hero-txt {
+    margin-bottom: var(--main-margin);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,11 +146,5 @@ footer p {
  margin-bottom: 0;
  margin-right: 30px;
  line-height: 22px;
-}
-
-.hearts {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
 }
 
