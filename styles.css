@@ -73,7 +73,7 @@ h1 {
 
 .leading {
     font-size: 32px;
-    line-height: 39px;
+    line-height: 39px; 
 }
 
 
@@ -129,15 +129,18 @@ header, footer {
 }
 
 
-.hero-img, .hero-txt {
+.hero-img, .hero-dscr {
     width: 100%;
 }
 
-.hero-txt {
+.hero-dscr {
     margin-bottom: var(--main-margin);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.hero-dscr .leading {
+    flex-grow: 1;
 }
 
 
